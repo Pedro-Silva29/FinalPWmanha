@@ -34,17 +34,35 @@
         <!--Estilo Header contato Juliana-->
         <!--Meu css-->
         <link rel="stylesheet" href="site/assets/css/estilo-contato.css" />
-        
+
         <!-- icheck bootstrap -->
         <link rel="stylesheet" href="painel/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="site/plugins/fontawesome-free/css/all.min.css">
-        
+
         <!--link do footer-->
         <link rel="stylesheet" href="site/assets/css/footer.css" />
-        
+
         <!--link Botao TOP-->
         <link rel="stylesheet" href="assets/css/btnTOPO.css" />
     </head>
     <body>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            
+            #btnTop{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
 
+                height: 29px;
+                width: 29px;
+                color: #FFFFFF;
+                background-color: #333333;
+                border: none;
+                border-radius: 2px;
+                display: none;
+            }
+        </style>

@@ -6,10 +6,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="footer-blog">
                         <h3>Senac: </h3>
-                        <p class="footerp">Instituição de educação profissional aberta a toda a sociedade, com a missão de desenvolver pessoas e organizações para o
-                  mundo do trabalho. O Serviço Nacional de Aprendizagem Comercial – Senac, pessoa jurídica de direito privado, sem fins 
-                  lucrativos, foi criado pelo Decreto-lei nº 8.621 de 10 de janeiro de 1946. Neste mesmo ano, foi fundado também seu 
-                  Departamento Regional de Pernambuco, instalado em 14 de outubro.
+                        <p class="footerp text-justify my-auto">Instituição de educação profissional aberta a toda a sociedade, com a missão de desenvolver pessoas e organizações para o
+                  mundo do trabalho.
                         </p>
                     </div>
                 </div>
@@ -95,6 +93,25 @@
 <!-- Bootstrap 4 -->
 <script src="site/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!--botao voltar ao topo-->
+<button style="bottom: 30px;" onclick="backToTop()" id="btnTop">^</button>
+
+<script>
+    window.onscroll = function(){
+          scroll();
+    };
+    function scroll(){
+        let btn = document.getElementById("btnTop");
+        if (document.documentElement.scrollTop > 50){
+            btn.style.display = "block";            
+        }else{
+            btn.style.display = "none";
+        }
+    }
+    function backToTop(){
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 <!--pagina Inicial Plugins-->
 <script src="site/plugins/flickity/flickity.pkgd.min.js"></script>
